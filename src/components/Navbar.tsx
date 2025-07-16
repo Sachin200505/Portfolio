@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             {/* Theme Toggle Animated */}
 <motion.button
   onClick={toggleTheme}
-  className="p-3 rounded-full bg-gradient-to-tr from-yellow-100 via-orange-200 to-pink-200 dark:from-indigo-800 dark:via-purple-900 dark:to-blue-900 shadow-lg transition-colors relative overflow-hidden h-12 w-12 flex items-center justify-center"
+  className="p-3 rounded-full bg-gradient-to-tr from-yellow-100 via-orange-200 to-pink-200 dark:from-indigo-800 dark:via-purple-900 dark:to-blue-900 shadow-lg transition-colors relative overflow-hidden h-10 w-10 md:h-12 md:w-12 flex items-center justify-center"
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
@@ -112,6 +112,7 @@ const Navbar: React.FC = () => {
     )}
   </AnimatePresence>
 </motion.button>
+
 
             {/* Mobile Menu Button */}
             <motion.button
