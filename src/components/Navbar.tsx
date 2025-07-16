@@ -80,38 +80,38 @@ const Navbar: React.FC = () => {
           <div className="flex items-center space-x-2 sm:space-x-4">
 
             {/* Theme Toggle Animated */}
-            <motion.button
-              onClick={toggleTheme}
-              className="p-3 rounded-full bg-gradient-to-tr from-yellow-100 via-orange-200 to-pink-200 dark:from-indigo-800 dark:via-purple-900 dark:to-blue-900 shadow-lg transition-colors relative overflow-hidden h-12 w-12 flex items-center justify-center"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <AnimatePresence mode="wait">
-                {isDark ? (
-                  <motion.div
-                    key="sun"
-                    initial={{ y: 20, rotate: -180, opacity: 0, scale: 0.5 }}
-                    animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
-                    exit={{ y: -20, rotate: 180, opacity: 0, scale: 0.5 }}
-                    transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                    className="text-yellow-400"
-                  >
-                    <Sun size={24} />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="moon"
-                    initial={{ y: -20, rotate: 180, opacity: 0, scale: 0.5 }}
-                    animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
-                    exit={{ y: 20, rotate: -180, opacity: 0, scale: 0.5 }}
-                    transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                    className="text-purple-300"
-                  >
-                    <Moon size={24} />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.button>
+<motion.button
+  onClick={toggleTheme}
+  className="p-3 rounded-full bg-gradient-to-tr from-yellow-100 via-orange-200 to-pink-200 dark:from-indigo-800 dark:via-purple-900 dark:to-blue-900 shadow-lg transition-colors relative overflow-hidden h-12 w-12 flex items-center justify-center"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+  <AnimatePresence mode="wait">
+    {isDark ? (
+      <motion.div
+        key="sun"
+        initial={{ y: 20, rotate: -180, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
+        exit={{ y: -20, rotate: 180, opacity: 0, scale: 0.5 }}
+        transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+        className="text-yellow-400"
+      >
+        <Sun className="w-6 h-6 md:w-7 md:h-7" />
+      </motion.div>
+    ) : (
+      <motion.div
+        key="moon"
+        initial={{ y: -20, rotate: 180, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, rotate: 0, opacity: 1, scale: 1 }}
+        exit={{ y: 20, rotate: -180, opacity: 0, scale: 0.5 }}
+        transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+        className="text-purple-300"
+      >
+        <Moon className="w-6 h-6 md:w-7 md:h-7" />
+      </motion.div>
+    )}
+  </AnimatePresence>
+</motion.button>
 
             {/* Mobile Menu Button */}
             <motion.button
