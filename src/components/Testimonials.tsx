@@ -22,14 +22,6 @@ const solidColorsDark = [
 
 const Testimonials: React.FC = () => {
   const [testimonials, setTestimonials] = useState([
-    {
-      id: 1,
-      name: 'Dr. Priya Sharma',
-      role: 'Associate Professor, AI Department',
-      review: 'Sachin is an exceptional student with a rare combination of theoretical knowledge and practical implementation skills. His animal detection project was outstanding.',
-      rating: 5,
-      date: '2024-01-15 14:30'
-    },
   ]);
 
   const [isFormOpen, setIsFormOpen] = useState(false);
