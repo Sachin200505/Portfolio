@@ -17,10 +17,12 @@
     "caniuse-lite": "^1.0.30001727",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.16",
+    "github-calendar": "^2.3.4",
     "lucide-react": "^0.344.0",
     "pdfjs-dist": "^3.11.174",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-github-calendar": "^4.5.9",
     "react-pdf": "^10.0.1",
     "react-router-dom": "^7.6.3",
     "three": "^0.152.2"

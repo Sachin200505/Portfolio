@@ -257,3 +257,12 @@ html.dark {
           background-size: cover;
           background-repeat: no-repeat;
         }
+.github-calendar-wrapper {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.github-calendar-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

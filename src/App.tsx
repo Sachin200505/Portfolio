@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import GitHubCalendarSection from './components/GitHubCalendarSection';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Resume from './components/Resume';
@@ -16,6 +17,7 @@ import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
 import FloatingChatbot from './components/FloatingChatbot';
 import './App.css';
+import GitHubCalendar from 'react-github-calendar';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <About />
             <Education />
             <Skills />
+            <GitHubCalendarSection />
             <Projects />
             <Certifications />
             <Resume />

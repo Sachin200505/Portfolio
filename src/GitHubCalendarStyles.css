@@ -1,0 +1,37 @@
+.github-calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+/* Centering inner calendar content */
+.github-calendar > div {
+  margin: auto;
+}
+
+/* Scrollbar styling for mobile (optional "cute" style) */
+.github-calendar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.github-calendar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.github-calendar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.github-calendar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive: Scroll only in mobile view */
+@media (min-width: 768px) {
+  .github-calendar {
+    overflow-x: hidden; /* Hide scroll on desktop */
+  }
+}
