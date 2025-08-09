@@ -127,8 +127,10 @@ className="px-3 py-1 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-sla
     href="https://github.com/Sachin200505?tab=repositories"
     target="_blank"
     rel="noopener noreferrer"
-    className="relative overflow-hidden px-8 py-4 rounded-xl text-black font-bold text-lg flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl"
-    whileHover={{ scale: 1.05 }}
+ className="relative overflow-hidden px-8 py-4 rounded-xl 
+               font-bold text-lg flex items-center gap-3 
+               bg-white/10 backdrop-blur-md border border-white/20 shadow-xl
+               text-slate-800 dark:text-white"    whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
     <Github size={24} />
