@@ -35,7 +35,33 @@ const Projects: React.FC = () => {
       techStack: ['Python', 'tensorflow', 'OpenCV', 'GPS', 'Arduino','raspberry-pi','Drone kit'],
       github: 'https://github.com/Sachin200505/Autonomous-Search-and-Rescue-Drone',
       category: 'Autonomous Drone'
-    }
+    },
+{
+  title: 'Hospital Management System ',
+description: 'Console-based hospital management system in Java with MySQL integration. Supports patient registration, doctor management, and appointment scheduling.',
+  image: '/assets/hospital.png', 
+  techStack: ['Java', 'JDBC (MySQL Connector)', 'MySQL', 'CLI/Console'],
+  github: 'https://github.com/Sachin200505/Hospital-Management-System', 
+  category: 'Healthcare'
+}
+
+,
+   {
+  title: 'Gym Info Club',
+description: 'Web-based gym management system built with Spring Boot and MySQL. Provides member registration, login, and slot booking, while admins can manage users, slots, and equipment.',
+  image: '/assets/gym.webp', // replace with your image path
+  techStack: [
+    'Java',
+    'Spring Boot (MVC, Security, JPA)',
+    'JSP/JSTL',
+    'MySQL',
+    'Hibernate',
+    'Maven/Tomcat'
+  ],
+  github: 'https://github.com/Sachin200505/Gym_Info_Club', // replace if different
+  category: 'Fitness/Management'
+}
+
   ];
 
   return (
@@ -69,7 +95,7 @@ const Projects: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-white/90 dark:bg-slate-800/90 text-xs font-semibold rounded-full">
